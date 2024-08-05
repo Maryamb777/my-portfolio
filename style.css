@@ -1,0 +1,147 @@
+:root {
+    --main-color: #DDE4D1;
+    /* Periglacial Blue */
+    --secondary-color: #C45D88;
+    /* Mulberry */
+    --text-color: #C45D88;
+    /* Mulberry */
+    --hover-color: #f0f0f0;
+    --background-color: #DDE4D1;
+    --dark-background: #222;
+    --dark-text: #eee;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav-menu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu .brand {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.nav-menu .menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.nav-menu .menu a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-menu .icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu .icons img {
+    width: 20px;
+    height: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: var(--background-color);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.hero-image img {
+    width: 150px;
+}
+
+.hero-image p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+}
+
+body.dark header {
+    background: var(--dark-background);
+}
+
+body.dark .nav-menu {
+    background: var(--dark-background);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+body.dark .nav-menu .brand,
+body.dark .nav-menu .menu a {
+    color: var(--dark-text);
+}
+
+body.dark .hero {
+    background: var(--dark-background);
+}
