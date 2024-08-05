@@ -1,18 +1,23 @@
 :root {
     --main-color: #DDE4D1;
-    /* Periglacial Blue */
     --secondary-color: #C45D88;
-    /* Mulberry */
     --text-color: #C45D88;
-    /* Mulberry */
+    --second-text-color: #000000;
     --hover-color: #f0f0f0;
-    --background-color: #DDE4D1;
+    --background-color: #FFFFFF;
     --dark-background: #222;
     --dark-text: #eee;
+
+    /* Icon Colors */
+    --icon-color: #000000;
+    /* black for light mode */
+    --dark-icon-color: #ffffff;
+    /* white for dark mode */
 }
 
+
 body {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -22,10 +27,10 @@ body {
 
 header {
     background: var(--background-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); */
     padding: 10px 20px;
     position: sticky;
-    top: 0;
+    top: 2;
     z-index: 1000;
 }
 
@@ -34,7 +39,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--second-text-color);
 }
 
 .nav-menu .container {
@@ -48,13 +53,14 @@ header {
     font-size: 1.5em;
     color: var(--secondary-color);
     text-decoration: none;
+    font: 'Helvetica Neue', sans-serif;
 }
 
 .nav-menu .menu a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--second-text-color);
     margin: 0 10px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .nav-menu .menu a:hover {
@@ -95,7 +101,7 @@ main {
 
 .hero-content p {
     font-size: 1.2em;
-    color: var(--text-color);
+    color: var(--second-text-color);
     line-height: 1.6;
 }
 
